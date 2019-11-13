@@ -1,19 +1,24 @@
 {
-  "name": "my-app-server",
-  "version": "0.0.1",
-  "description": "back-end server for slack clone",
+  "name": "graphql-server-starter",
+  "version": "0.1.0",
+  "description": "GraphQl boilerplate server",
   "main": "app.js",
   "scripts": {
     "start": "nodemon --exec babel-node app.js"
   },
-  "author": "kprocks",
+  "author": "kprocks86",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "apollo-server-express": "^2.9.7",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "graphql": "^14.5.8"
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "merge-graphql-schemas": "^1.7.3",
+    "mongoose": "^5.7.8",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
