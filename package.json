@@ -18,6 +18,7 @@
     "jsonwebtoken": "^8.5.1",
     "merge-graphql-schemas": "^1.7.3",
     "mongoose": "^5.7.8",
+    "morgan": "^1.9.1",
     "path": "^0.12.7"
   },
   "devDependencies": {
