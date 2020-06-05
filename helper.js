@@ -10,6 +10,8 @@ const getUser = async (req) => {
     } catch (e) {
       throw new AuthenticationError('Your session expired. Sign in again.');
     }
+  } else {
+    throw new AuthenticationError('Your session expired. Sign in again.');
   }
 };
 

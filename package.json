@@ -4,7 +4,8 @@
   "description": "GraphQl boilerplate server",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec babel-node app.js"
+    "start": "nodemon --exec babel-node app.js",
+    "lint": "eslint --ext .js schema/ resolvers/ models/ app.js helper.js"
   },
   "author": "kprocks86",
   "license": "MIT",
@@ -31,6 +32,12 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
+    "husky": "^4.2.5",
     "nodemon": "^1.19.4"
-  }
+  },
+    "husky": {
+      "hooks": {
+        "pre-commit": "yarn lint"
+      }
+    }
 }
